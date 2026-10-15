@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-14T22:09:46.881433+00:00",
+  "purpose": "Reviewer-requested development-tuned compact CNN reference; exploratory extension after previous tests were examined",
+  "architecture": "Existing SmallCNN, 16647 parameters; native 28x28 RGB; no external pretraining",
+  "learning_rates": [
+    0.0005,
+    0.002
+  ],
+  "augmentation": false,
+  "batch_size": 128,
+  "max_epochs": 80,
+  "patience": 12,
+  "weight_decay": 0.0001,
+  "schedule": "CosineAnnealingLR over 80 epochs, eta_min=initial_lr*0.05",
+  "seeds": [
+    101,
+    211,
+    307,
+    401,
+    503,
+    601,
+    701,
+    809,
+    907,
+    1009
+  ],
+  "selection": "For each seed, choose the larger best tuning macro F1 across two learning rates; exact ties choose lower learning rate. Calibration is excluded from all candidate fitting and selection; fit temperature only for selected candidate.",
+  "uncertainty": "Separate across-partition SD and conditional paired lesion bootstrap; no confirmatory superiority claim",
+  "fit_count": 20
+}
