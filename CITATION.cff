@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the permanent archive and the manuscript when using this work."
+type: software
+title: "Stable graph propagation does not ensure image robustness: reproducibility code, fitted models and evaluation archive"
+authors:
+  - family-names: Uyulan
+    given-names: Caglar
+    orcid: "https://orcid.org/0000-0002-6423-6720"
+    affiliation: "Faculty of Engineering and Architecture, Department of Mechanical Engineering, İzmir Katip Celebi University, İzmir, Türkiye"
+version: 1.0.0
+date-released: 2026-10-15
+doi: 10.5281/zenodo.23393604
+url: "https://doi.org/10.5281/zenodo.23393604"
+repository-code: "https://github.com/DeepDynaSim/skin-lesion-gnn-stability"
+license: MIT
+keywords:
+  - graph neural networks
+  - dermoscopy
+  - robustness
+  - reproducibility

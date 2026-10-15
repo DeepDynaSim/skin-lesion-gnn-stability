@@ -1,0 +1,123 @@
+{
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.23393604",
+  "scientific_fitted_states": {
+    "primary_and_controls": 150,
+    "graph_sensitivity": 42,
+    "frozen_imagenet_heads": 10,
+    "compact_cnn_candidates": 20
+  },
+  "full_archive_file_count": 2092,
+  "full_archive_exclusions": [
+    {
+      "path": "research_output/revision/analysis/reviewer_response_map.json",
+      "reason": "Private editorial correspondence or preparation",
+      "sha256": "2cafb50c58d4b9af1b5f39b60ee9bd697bef5afb9300041de6a97146bdbc25c3"
+    },
+    {
+      "path": "research_output/revision/data/mobilenet_v3_small-047dcff4.pth",
+      "reason": "External pretrained backbone; retrieve official hash-checked weights with transfer_reference.py",
+      "sha256": "047dcff4addef86ea5bc2eff13c9614dc11f47ab1160d0a71a25e7db994f4e1f"
+    },
+    {
+      "path": "research_output/revision/final/document_manifest.json",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "531e222cc49f09df7b12b25e0f3f2f91ea1f15147c9c09556c9c582c52a07032"
+    },
+    {
+      "path": "research_output/revision/final/Skin_Lesion_GNN_Revised_Manuscript.docx",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "c0fc8678ad55d2adb28d310e3173d35ca10c967fbaa0272b73b3da01a1108d07"
+    },
+    {
+      "path": "research_output/revision/final/Skin_Lesion_GNN_Revised_Manuscript.md",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "718d6582fd75eb19e37f7c4268c6d5b59ff900356572af06285429007f204579"
+    },
+    {
+      "path": "research_output/revision/final/Skin_Lesion_GNN_Revised_Manuscript.pdf",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "a0dcedfa20bd752417f4fc2f2874f58907ef3f23cdb3d35beedbccfb653de237"
+    },
+    {
+      "path": "research_output/revision/final/verification_report.json",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "3c3d7dc9781afc0e08854ce768af81f5e9bc35bee0da2b0038e9eef14a28a0a2"
+    },
+    {
+      "path": "research_output/revision/final/visual_QA.json",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "9b5f42972c15e245378118c5b626515fe873eea4f4a0a4b4c8b3f959b2f78e3d"
+    },
+    {
+      "path": "research_output/revision/manifest.sha256",
+      "reason": "Superseded manifest; public curation has its own complete manifest",
+      "sha256": "e96f7f70c0b21a9290fb4ee9f02f0bf9600564de9f7856fb366441cc90c2fb8d"
+    },
+    {
+      "path": "research_output/revision/Reviewer_Response.md",
+      "reason": "Private editorial correspondence or preparation",
+      "sha256": "b78c85e9ae59f6d4475aa5ea449bd8d883474b9e9aa7346be655a6762e7d1234"
+    },
+    {
+      "path": "research_output/revision/reviewer_response.py",
+      "reason": "Private editorial correspondence or preparation",
+      "sha256": "40e483a1c0499916a23b0e0c90a0a750ea7e87e4aea8343e2942ef731751fd52"
+    },
+    {
+      "path": "research_output/revision/sci_revision/Editorial_Source_Checks.md",
+      "reason": "Private editorial correspondence or preparation",
+      "sha256": "4738267239b40b62a2e33f7b65979e5621b75d1e7b95ee65e781cfa63cc74e17"
+    },
+    {
+      "path": "research_output/revision/sci_revision/final/artifact_audit.json",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "ebc6c4ae5470199ca772c06092a75bb234c3a59387cebf2c77163e8f5fa7a708"
+    },
+    {
+      "path": "research_output/revision/sci_revision/final/document_manifest.json",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "8b9e3c9f65272292ca6dee716bae1fe30209e5269fcaaf5aba24f6d2555ea60b"
+    },
+    {
+      "path": "research_output/revision/sci_revision/final/page_render_comparison.json",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "4aad0a1ae6200bf02d342f3e3648c93d15224cc49d7c5bb646f9bb9106dc495f"
+    },
+    {
+      "path": "research_output/revision/sci_revision/final/Skin_Lesion_GNN_Final_Manuscript.docx",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "fa5b5dbf12c88033cbd8ae7f7f31e34fe4d4ea4ef75a2ca78abeb7f59c516ffc"
+    },
+    {
+      "path": "research_output/revision/sci_revision/final/Skin_Lesion_GNN_Final_Manuscript.md",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "b4b092f4d464102f7ec1f9e2c6c4b94c4e18b73c78648b2e7adc72ac31634388"
+    },
+    {
+      "path": "research_output/revision/sci_revision/final/Skin_Lesion_GNN_Final_Manuscript.pdf",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "c5adcc284d517b664a57f37cf2046f32014772e93326ba1b723c321dd5e4e693"
+    },
+    {
+      "path": "research_output/revision/sci_revision/final/visual_QA.json",
+      "reason": "Superseded document; current manuscript supplied under manuscript/",
+      "sha256": "417be3f551945243ac18f6c5d3a9f5b1d3d49463f6f76e47c4e97d7003218527"
+    },
+    {
+      "path": "research_output/revision/sci_revision/make_review_response.py",
+      "reason": "Private editorial correspondence or preparation",
+      "sha256": "ffc7891b72db5effa2714b112c52d6ac041d83aeb2c73428dfaf0218f3d2e29b"
+    },
+    {
+      "path": "research_output/revision/sci_revision/Second_Review_Response.md",
+      "reason": "Private editorial correspondence or preparation",
+      "sha256": "02ccf38bd124ff13534e4e98c35ed7f0cd7513a5a58cf5fe377ce5f1ae0bf6f9"
+    },
+    {
+      "path": "RESTORATION_VERIFIED.json",
+      "reason": "Historical outer packaging note",
+      "sha256": "21c092da11ebc8fd11325692c7267b3290c603c73e309edcd4599d0c59cae172"
+    }
+  ]
+}

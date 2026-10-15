@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+*.pt
+*.pth
+*.npz
+*.zip
+research_output/**/replication_env/
+research_output/**/replication_workspace/
