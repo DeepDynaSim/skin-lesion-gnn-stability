@@ -1,0 +1,14 @@
+{
+  "reason": "The development tuning macro F1 of all ten scratch MobileNetV3 fits remained at the majority-class level. A separate ImageNet frozen-feature reference avoids treating that training failure as a competitive lightweight baseline.",
+  "scope": "Additional exploratory comparator; does not replace or redefine the 150 prespecified primary/control fits",
+  "freeze_before_additional_test_predictions": true,
+  "backbone": "torchvision MobileNetV3 Small IMAGENET1K_V1, official weights; all backbone parameters and batch-normalization statistics fixed",
+  "preprocessing": "Official weight transforms: resize to 256, central crop 224, ImageNet channel normalization. Inputs remain the original 28x28 images; upsampling adds no image detail.",
+  "feature": "576 dimensional output after average pooling and before the original classifier",
+  "learned_head": "Training-standardized features; linear 576 to 7 head (4039 learned parameters), no augmentation",
+  "training": "Same ten lesion-grouped development partitions, AdamW 0.002, weight decay 0.0001, batch 256, maximum 60 epochs, patience 10 on tuning macro F1; separate calibration temperature",
+  "selection_scope": "Motivated by development fitting failure; no transfer-reference hyperparameter selected from test results",
+  "corruptions": "The same prespecified 23 conditions, five Gaussian-noise realizations, with frozen backbone/head",
+  "uncertainty": "1000 lesion-cluster C draws; image draws for E/PH2, conditional on the fixed ensemble; reported separately from ten-head training variation",
+  "interpretation": "External ImageNet pretraining and different preprocessing prevent attribution of differences to architecture alone"
+}

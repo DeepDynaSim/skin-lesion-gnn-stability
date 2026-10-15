@@ -1,0 +1,6 @@
+{
+  "frozen_before_PH2_predictions": true,
+  "model_settings": "Unchanged from protocol.json",
+  "PH2_evaluation": "Apply frozen seven-class networks to all 200 externally acquired images. Use the unmodified MEL probability for binary ROC and the seven-class argmax for melanoma sensitivity; common and atypical nevi are negatives. Threshold tradeoffs use only C development calibration labels. No PH2 fitting.",
+  "PH2_source": "Original PH2 images and diagnosis table from a public mirror, matched to original documentation and counts; no redistribution of images."
+}

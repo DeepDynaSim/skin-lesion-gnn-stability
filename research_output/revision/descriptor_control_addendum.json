@@ -1,0 +1,8 @@
+{
+ "locked_before_new_test_evaluation": true,
+ "additional_model": "RGBOnlyGraph",
+ "definition": "Retain the ContrastPenalty graph, restart filter, encoder dimensions and classifier; set the six standardized horizontal/vertical local-difference descriptor coordinates to zero. RGB means, RGB standard deviations, coordinates and radius are retained. Graph boundary weights remain unchanged to isolate the encoder descriptor contribution.",
+ "training": "Same ten partitions and seeds and common geometric augmentations as the primary comparisons",
+ "existing_RGBOnly_control": "Gradient-free graph-free encoder; compared with NoGraph to isolate the same descriptor in the graph-free architecture",
+ "model_parameters_and_main_protocol": "Unchanged; this adds a missing control rather than tuning on a test set"
+}
