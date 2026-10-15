@@ -1,0 +1,14 @@
+[
+  {
+    "path": "dermamnist_extended_28.npz",
+    "url": "https://zenodo.org/records/11101338/files/dermamnist_extended_28.npz?download=1",
+    "bytes": 24608820,
+    "sha256": "eec0a99d4cabc5b9082433bc94b54947651b90178806294762f33b10a46c7b31"
+  },
+  {
+    "path": "DermaMNIST-E.csv",
+    "url": "https://zenodo.org/records/11101338/files/DermaMNIST-E.csv?download=1",
+    "bytes": 612305,
+    "sha256": "114ba0f48ab00b4cd766264b98185a2829a08fa20f743f4c0064152d53b23b63"
+  }
+]
