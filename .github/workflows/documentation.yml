@@ -1,0 +1,16 @@
+name: Mathematical documentation
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  formulas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npx --yes pnpm@11.25.0 install --dir tools/math-renderer --frozen-lockfile --ignore-scripts
+      - run: node scripts/render_math.mjs --check
