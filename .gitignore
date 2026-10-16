@@ -6,3 +6,5 @@ __pycache__/
 *.zip
 research_output/**/replication_env/
 research_output/**/replication_workspace/
+**/node_modules/
+generated/

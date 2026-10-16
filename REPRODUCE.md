@@ -1,5 +1,12 @@
 # Reproduction guide
 
+All scientific reproduction commands below use the complete extracted DOI archive.
+Run them from its root. The small Git checkout contains source/protocol files, but
+does not include `verify_release.py`, fitted states, or all computed outputs.
+
+For the current Git templates, editable LaTeX is retained in `manuscript_template.md.in`;
+the neighboring `.md` files are readable SVG presentations. See [the formula guide](docs/MATH_RENDERING.md).
+
 1. Download and extract the complete Zenodo ZIP linked in README. Verify it using
    `python verify_release.py`. Do not flatten its directories.
 2. Use Python 3.12 and install the full lock from

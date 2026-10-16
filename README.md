@@ -31,6 +31,12 @@ protocols, group indices, histories, calibration records, predictions and analys
 are archived. PH2 is an external evaluation cohort and was not used in fitting,
 hyperparameter choice or calibration.
 
+The two source manuscript templates now have readable vector formulas on GitHub:
+[original revision](research_output/revision/manuscript_template.md) and
+[integrated revision](research_output/revision/sci_revision/manuscript_template.md).
+They remain working templates: author, result, table and figure markers are filled
+by the archived authoring pipeline. See the [formula/source guide](docs/MATH_RENDERING.md).
+
 Representative reported results: C macro-F1 0.586 for ContrastPenalty, 0.589 for
 the penalty-free control, 0.649 for ResNet18 and 0.585 for the compact CNN extension.
 For Gaussian noise (sigma 0.05), ContrastPenalty macro-F1 is 0.589 for graph-only,
@@ -46,7 +52,12 @@ the complete DOI archive for fitted states, numerical outputs, full-resolution
 figures and the editable manuscript. Extract it into a **separate directory**;
 its `research_output/` layout is the original code's relative-path layout.
 
+Run the following commands **from the root of the extracted complete archive**,
+where `verify_release.py` is supplied. The small Git checkout does not contain that
+verifier, the fitted states, or the finished manuscript/figure directories.
+
 ```powershell
+cd /path/to/extracted/Skin_Lesion_GNN_Reproducibility_v1.0.0
 python -m venv .venv
 # Activate the environment with the command appropriate to your operating system.
 python -m pip install -r research_output/revision/sci_revision/requirements_full.lock
@@ -59,7 +70,19 @@ retrieval validates all four exact source hashes. PH2 must be obtained separatel
 under its source terms; follow `REPRODUCE.md`. No source clinical image dataset,
 restricted PH2 annotation table or image embedding cache is redistributed.
 
-## Contents and verification
+## Git checkout and complete archive
+
+| Resource | Small Git checkout | Complete DOI archive |
+|---|---|---|
+| Pipeline source, protocols and dependency lock | Included | Included |
+| Working manuscript templates | Included, with readable formulas and editable sources | Original authoring templates |
+| 222 fitted scientific states and computed results | Download separately | Included |
+| Final `manuscript/` and `figures/` directories | Download separately | Included |
+| `verify_release.py`, `release_manifest.json`, `manifest.sha256` | Download separately | Included |
+| `release_inventory.json`, release and source notices | Included | Archive curation is recorded separately |
+
+The locations below describe the **complete extracted archive**, rather than
+promising that its generated outputs are all present in the small Git repository:
 
 - `research_output/revision`: original scientific pipeline, protocols and results.
 - `research_output/revision/sci_revision`: compact-CNN extension, descriptor-noise
@@ -71,6 +94,11 @@ restricted PH2 annotation table or image embedding cache is redistributed.
 - `release_manifest.json`, `manifest.sha256`: file sizes, hashes and model-state
   counts. `verify_release.py` validates bytes without third-party packages.
 - `curation_exclusions.json`: explains differences from the earlier local archive.
+
+Documentation presentation fixes in Git do not change the frozen DOI archive or
+its checksums. Current Git authoring scripts read the byte-preserved
+`manuscript_template.md.in` sources so that native editable mathematics is retained;
+the adjacent `.md` files are generated reading views.
 
 Some historical audit files preserve the checks performed before public deposition.
 Their statements that public deposition was pending describe that earlier stage;

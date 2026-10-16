@@ -1,0 +1,3 @@
+# Preserve original editable manuscript-template bytes across platforms.
+research_output/revision/manuscript_template.md.in -text
+research_output/revision/sci_revision/manuscript_template.md.in -text
