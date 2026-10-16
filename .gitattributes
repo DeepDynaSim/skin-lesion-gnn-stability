@@ -1,3 +1,6 @@
 # Preserve original editable manuscript-template bytes across platforms.
 research_output/revision/manuscript_template.md.in -text
 research_output/revision/sci_revision/manuscript_template.md.in -text
+# Keep generated SVG and manifest checksums identical in Windows checkouts.
+docs/assets/math/*.svg text eol=lf
+docs/assets/math/manifest.json text eol=lf
