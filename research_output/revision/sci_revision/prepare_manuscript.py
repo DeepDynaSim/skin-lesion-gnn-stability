@@ -5,7 +5,7 @@ HERE=Path(__file__).resolve().parent;R=HERE.parent
 TITLE='Stable graph propagation does not ensure image robustness: finite-step analysis and component evaluation in dermoscopic classification'
 
 def main():
-    text=(R/'manuscript_template.md').read_text(encoding='utf-8')
+    text=(R/'manuscript_template.md.in').read_text(encoding='utf-8')
     text=TITLE.join(text.split(text.splitlines()[0][2:],1))
     start=text.index('Purpose:');end=text.index('\n\nKeywords:',start)
     text=text[:start]+'{{revised_abstract}}'+text[end:]
@@ -67,7 +67,7 @@ Here I indexes images, i nodes and j descriptor coordinates. The decomposition u
 {{clean_replication_text}}
 
 [REPORTING_MAP]''')
-    (HERE/'manuscript_template.md').write_text(text,encoding='utf-8')
+    (HERE/'manuscript_template.md.in').write_text(text,encoding='utf-8')
     (HERE/'bibliography').mkdir(exist_ok=True);shutil.copy2(R/'bibliography/references.json',HERE/'bibliography/references.json')
     for p in (R/'figures').iterdir():
         if p.is_file() and p.suffix in ['.png','.svg','.pdf','.json']:shutil.copy2(p,HERE/'figures'/p.name)

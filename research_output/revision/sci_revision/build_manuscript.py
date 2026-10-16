@@ -13,7 +13,7 @@ from latex2mathml.converter import convert
 from manuscript_results_second import build
 
 def main():
-    values,tables=build();text=(R/'manuscript_template.md').read_text(encoding='utf-8');author='Caglar Uyulan\nFaculty of Engineering and Architecture, Department of Mechanical Engineering, İzmir Katip Celebi University, İzmir, Türkiye\nCorrespondence: caglar.uyulan@ikcu.edu.tr'
+    values,tables=build();text=(R/'manuscript_template.md.in').read_text(encoding='utf-8');author='Caglar Uyulan\nFaculty of Engineering and Architecture, Department of Mechanical Engineering, İzmir Katip Celebi University, İzmir, Türkiye\nCorrespondence: caglar.uyulan@ikcu.edu.tr'
     for k,v in values.items():text=text.replace('{{'+k+'}}',v)
     text=text.replace('[AUTHOR]',author);assert '{{' not in text
     text=text.replace('seven regional controls, a descriptor ablation','eight regional controls')
