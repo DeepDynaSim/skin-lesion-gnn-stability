@@ -1,0 +1,943 @@
+{
+  "renderer": "MathJax 3.2.2 SVG; embedded paths, no external fonts",
+  "inlineFontPixels": 17,
+  "displayFontPixels": 22,
+  "expressions": [
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 1,
+      "display": true,
+      "label": null,
+      "source": "x_i=[\\mu_i^{RGB};\\sigma_i^{RGB};g_i^{x,RGB};g_i^{y,RGB};u_i;v_i;r_i]\\in\\mathbb{R}^{15}",
+      "svg": "docs/assets/math/display-12e7342ee8b45c73.svg",
+      "sha256": "df14048eb00f08808d1cbe087647d629a19dfeebeef2ae0ba248f1faf334df2c"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 2,
+      "display": true,
+      "label": null,
+      "source": "r_i=\\sqrt{(u_i-1/2)^2+(v_i-1/2)^2}",
+      "svg": "docs/assets/math/display-d640e3e40bf87aea.svg",
+      "sha256": "ce4f90a00b345552fdef8d0cfe2cc99344cbcb81f19a62457c76435948ffe375"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 3,
+      "display": true,
+      "label": null,
+      "source": "b_i=\\min\\left(1,\\frac{\\frac{1}{3}\\sum_{c=1}^{3}(g_{ic}^{x}+g_{ic}^{y})}{0.15}\\right)",
+      "svg": "docs/assets/math/display-1eba44e48025276c.svg",
+      "sha256": "ade86d8280df57a4e4ada21ee5f3862b00297bcc02bda479d36525d7ac228f64"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 4,
+      "display": true,
+      "label": null,
+      "source": "m_{ij}=\\mathbf{1}\\{j\\in\\mathcal{N}_{grid}(i)\\ \\mathrm{or}\\ j\\in\\mathcal{N}_{kNN}(i)\\ \\mathrm{or}\\ i\\in\\mathcal{N}_{kNN}(j)\\}",
+      "svg": "docs/assets/math/display-a10d58104d2836f3.svg",
+      "sha256": "10cd21e9770e426e12c1063381e615f0860fc2aef96738902bd3428bc99f2346"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 5,
+      "display": true,
+      "label": null,
+      "source": "a_{ij}=m_{ij}\\exp\\left(-\\frac{\\|\\mu_i-\\mu_j\\|_2^2}{2\\sigma_c^2}-\\frac{\\|p_i-p_j\\|_2^2}{2\\sigma_s^2}-\\frac{\\beta}{2}(b_i+b_j)\\right),\\quad i\\ne j",
+      "svg": "docs/assets/math/display-e0409119929b4644.svg",
+      "sha256": "41303097673fc12c69ec4c483d91d49f22869da23c7b30c033e0a4c00e9b0166"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 6,
+      "display": true,
+      "label": null,
+      "source": "\\widetilde{A}=A+I_N,\\quad\\widetilde{D}_{ii}=\\sum_j\\widetilde{A}_{ij},\\quad S=\\widetilde{D}^{-1/2}\\widetilde{A}\\widetilde{D}^{-1/2},\\quad L=I_N-S",
+      "svg": "docs/assets/math/display-6d1f092d1b519e3a.svg",
+      "sha256": "402e81cfbd16896403bf023c4a74c0595d724d3f01882b5f80411704726acd53"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 7,
+      "display": true,
+      "label": null,
+      "source": "Z=\\operatorname{ReLU}\\left(\\operatorname{ReLU}(XW_0+b_0)W_1+b_1\\right)",
+      "svg": "docs/assets/math/display-fb0fad678bc5cbbb.svg",
+      "sha256": "a8d5da3e88aab53a701f412c3ca93edde1815394f673b3ec36a791c200256783"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 8,
+      "display": true,
+      "label": null,
+      "source": "H^{(0)}=Z,\\qquad H^{(t+1)}=(1-\\alpha)SH^{(t)}+\\alpha Z",
+      "svg": "docs/assets/math/display-424daf9922dbb733.svg",
+      "sha256": "f9eae97bd36b372e46ab3399a7d8268ab83cedbefca9c0238b0790d378a1bfd2"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 9,
+      "display": true,
+      "label": null,
+      "source": "Q_K=(1-\\alpha)^K S^K+\\alpha\\sum_{t=0}^{K-1}(1-\\alpha)^t S^t,\\qquad H^{(K)}=Q_KZ",
+      "svg": "docs/assets/math/display-3085d54d77effd84.svg",
+      "sha256": "764bf666bcb5c456ec9a2f66713b6557fad730b61d8edcbafb9c773199e68e33"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 10,
+      "display": true,
+      "label": null,
+      "source": "z_G=[N^{-1}\\sum_{i=1}^{N}H_i^{(K)};\\ \\max_i H_i^{(K)}],\\qquad p=\\operatorname{softmax}(f_\\theta(z_G))",
+      "svg": "docs/assets/math/display-a325dcdeaa0d34bf.svg",
+      "sha256": "ef29dcef4cac4ddd772c2023041a41ec58114afc634b11d243c7bd2b86a7ccb7"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 11,
+      "display": true,
+      "label": null,
+      "source": "w_c=\\sqrt{\\frac{n_{train}}{C n_c}},\\qquad\\mathcal{L}=-\\frac{\\sum_{i=1}^{B}w_{y_i}\\log p_{i,y_i}}{\\sum_{i=1}^{B}w_{y_i}}",
+      "svg": "docs/assets/math/display-931dfda05ced6834.svg",
+      "sha256": "1e743151733b27449406cb14d656a746950f911c11aacb298bf507c858db2281"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 12,
+      "display": true,
+      "label": null,
+      "source": "p_T(c\\mid I)=\\frac{\\exp(\\ell_c/T)}{\\sum_{j=1}^{C}\\exp(\\ell_j/T)},\\qquad T>0",
+      "svg": "docs/assets/math/display-411b656f4a78f3a1.svg",
+      "sha256": "fe288956f3aac2029e9af691a586805e768819f819fcaa4d4c094cec6c9ab876"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 13,
+      "display": true,
+      "label": null,
+      "source": "H^*=\\alpha[I_N-(1-\\alpha)S]^{-1}Z=(I_N+\\tau L)^{-1}Z,\\qquad\\tau=\\frac{1-\\alpha}{\\alpha}",
+      "svg": "docs/assets/math/display-fec61f3d7d998e12.svg",
+      "sha256": "0e2a41f768fbfedcd8d67e22a0b222eaf5538f889f42b6056b85d4b53f3b9e08"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 14,
+      "display": true,
+      "label": null,
+      "source": "\\|H^{(K)}-H^*\\|_F\\le(1-\\alpha)^K\\|Z-H^*\\|_F",
+      "svg": "docs/assets/math/display-c11777465855066b.svg",
+      "sha256": "d0ec5591385849b16e75a45ef6b8df6b2b7c76b1d92a08aab7974fe198543a50"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 15,
+      "display": true,
+      "label": null,
+      "source": "H^*=\\underset{H}{\\operatorname{argmin}}\\{\\|H-Z\\|_F^2+\\tau\\operatorname{tr}(H^TLH)\\}",
+      "svg": "docs/assets/math/display-594edb52968908f9.svg",
+      "sha256": "28e91c213a1b41e9a7bfa982456d9e020f6ab06825b5c016dabc68c2c77f6721"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 16,
+      "display": false,
+      "label": null,
+      "source": "(1-\\alpha)S",
+      "svg": "docs/assets/math/inline-8e5a7954eeccab04.svg",
+      "sha256": "7a2ecbbd2b50cd6b40717e1bbbe0cc63059e8280bdef9a574f117c090e48f8ef"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 17,
+      "display": false,
+      "label": null,
+      "source": "I_N-(1-\\alpha)S",
+      "svg": "docs/assets/math/inline-5982b43f0b549cbd.svg",
+      "sha256": "a0b3c58b384e271e2c8c9a060d8eab3eb62dc6a2054a1db16a82cbb1a0109af2"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 18,
+      "display": false,
+      "label": null,
+      "source": "\\alpha",
+      "svg": "docs/assets/math/inline-ba58a7097c8fb88e.svg",
+      "sha256": "abedf5a56512e709328b79761ab4c4edb64ab5acbdea2c5da835730b703acdd7"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 19,
+      "display": false,
+      "label": null,
+      "source": "(I_N+\\tau L)H=Z",
+      "svg": "docs/assets/math/inline-0e87cd727664d58c.svg",
+      "sha256": "20053d9b1b5edf5338b2d9a168aa3560958d6563a96cce2ab372e457c869c5c5"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 20,
+      "display": true,
+      "label": null,
+      "source": "g_\\alpha(\\lambda)=\\frac{\\alpha}{\\alpha+(1-\\alpha)\\lambda}",
+      "svg": "docs/assets/math/display-49593d8aa06ad5c3.svg",
+      "sha256": "65d27d105e844dc616f632ac5278b4f5825ad176b17f377bb6e7d79dded79016"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 21,
+      "display": true,
+      "label": null,
+      "source": "g_{\\alpha,K}(\\lambda)=q^K+\\alpha\\frac{1-q^K}{1-q},\\qquad q=(1-\\alpha)(1-\\lambda)",
+      "svg": "docs/assets/math/display-e7f28ba91b4901b7.svg",
+      "sha256": "c47023b83cf641f6d1b62891796344ad98930c08ed10a896d0812d799f8b9267"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 22,
+      "display": false,
+      "label": null,
+      "source": "\\mathcal{E}(H)=\\operatorname{tr}(H^TLH)",
+      "svg": "docs/assets/math/inline-c7ace63321efb1c8.svg",
+      "sha256": "6e561f6bebefec5712d20e2ba169e423014fb3d3c6adb34ee343b0c16473aa8e"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 23,
+      "display": true,
+      "label": null,
+      "source": "\\mathcal{E}(H^*)=\\sum_j\\lambda_jg_\\alpha(\\lambda_j)^2\\|(U^TZ)_j\\|_2^2\\le\\mathcal{E}(Z)",
+      "svg": "docs/assets/math/display-cc9663cfe0de628c.svg",
+      "sha256": "eaa021725cd07647f1ac9a28ad40d57410b2afff8296ad2076e1e20d1d169ce8"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 24,
+      "display": false,
+      "label": null,
+      "source": "a=1-\\alpha",
+      "svg": "docs/assets/math/inline-aba27199a4260f15.svg",
+      "sha256": "c67020259450398455eddb8443473081f9b43ce42e1c6f143fae3a099fd01051"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 25,
+      "display": true,
+      "label": null,
+      "source": "\\|Q_K(S)Z-Q_K(S')Z\\|_F\\le c_K\\|S-S'\\|_2\\|Z\\|_F,\\qquad c_K=\\frac{a}{\\alpha}(1-a^K)",
+      "svg": "docs/assets/math/display-0c5f2dd11e6dbaba.svg",
+      "sha256": "b2916a09d9772e5592b839bd9915e29f1dc9930353282b2507f5a0fe41f3c5a4"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 26,
+      "display": false,
+      "label": null,
+      "source": "e_t",
+      "svg": "docs/assets/math/inline-581ffead640b628a.svg",
+      "sha256": "f04610c46d217d8dd1c2ea45aafccafe6025b468d864c661362a85a9c2c0afb8"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 27,
+      "display": false,
+      "label": null,
+      "source": "e_0=0",
+      "svg": "docs/assets/math/inline-349ecd0f86dacb84.svg",
+      "sha256": "1528c577981a6ca1ffdc23b01f1c6793e53dd79af4445c166b4a5f99181288bb"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 28,
+      "display": false,
+      "label": null,
+      "source": "e_{t+1}\\le a e_t+a\\|S-S'\\|_2\\|Z\\|_F",
+      "svg": "docs/assets/math/inline-89b6e03aa579ab30.svg",
+      "sha256": "97e9b0bb72c00a4edfc1218dbcadf893be0b0e0c7be9ece8308b272176172d4d"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 29,
+      "display": false,
+      "label": null,
+      "source": "c_K",
+      "svg": "docs/assets/math/inline-e68c20fb3c15f332.svg",
+      "sha256": "5e0b1e2fbf739dbb80884a74bb6636a5b995aa35869a67f83577a4bdd6cae86b"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 30,
+      "display": false,
+      "label": null,
+      "source": "c_K=2.3616",
+      "svg": "docs/assets/math/inline-ca3a8229b80cb729.svg",
+      "sha256": "f7bffd9e9f57e6393ab1d99be472a39013b2b72928a2e48545c8924235950659"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 31,
+      "display": false,
+      "label": null,
+      "source": "Q_K",
+      "svg": "docs/assets/math/inline-3c648998ea7949f1.svg",
+      "sha256": "217b8ff6b202b270b14cb280660184870ffba1c4903e0be3f1a59bc6ca0c11a3"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 32,
+      "display": true,
+      "label": null,
+      "source": "\\|Q_K(S)Z-Q_K(S')Z'\\|_F\\le\\|Z-Z'\\|_F+c_K\\|S-S'\\|_2\\|Z'\\|_F",
+      "svg": "docs/assets/math/display-ae43520aa4eb67e1.svg",
+      "sha256": "cc59e9ee07d242e134dfed3db231e62dd565b00eebeb7e874098780ff1e225d8"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 33,
+      "display": false,
+      "label": null,
+      "source": "Q_K(S)Z'",
+      "svg": "docs/assets/math/inline-e0267ade21a9213f.svg",
+      "sha256": "511c444836df56f696e1351a164a53ff0a3637c2cd872b6a9104301c7161e8fe"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 34,
+      "display": false,
+      "label": null,
+      "source": "\\rho",
+      "svg": "docs/assets/math/inline-540f7abd58827d93.svg",
+      "sha256": "2989345ef541903e86d8b247a2913235489e1d1f39e5610ebd0ea591cf2d32a8"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 35,
+      "display": false,
+      "label": null,
+      "source": "\\sqrt{1+1/N}",
+      "svg": "docs/assets/math/inline-7f68cbd5dc665c5d.svg",
+      "sha256": "053aa81ed850ae21333fc4e2ad08348687323af87d6f0a943863c780761013fa"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 36,
+      "display": false,
+      "label": null,
+      "source": "1/\\sqrt{N}",
+      "svg": "docs/assets/math/inline-596606f3b025feb5.svg",
+      "sha256": "99880d6ccf2617f01518892866fe3c13ebba326c72f5ec0dc5f0f1c382de0b5b"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 37,
+      "display": false,
+      "label": null,
+      "source": "L_f=\\|W_2\\|_2\\|W_3\\|_2",
+      "svg": "docs/assets/math/inline-197326e756a735f4.svg",
+      "sha256": "92f77aa5fa9c911e14a22becb07e123f46a0fe17d7dfcbb536802569c9b4b298"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 38,
+      "display": true,
+      "label": null,
+      "source": "\\|\\ell-\\ell'\\|_2\\le L_f\\sqrt{1+1/N}\\left[\\|Z-Z'\\|_F+c_K\\|S-S'\\|_2\\|Z'\\|_F\\right]",
+      "svg": "docs/assets/math/display-e40fc2b6a4e1d790.svg",
+      "sha256": "5a45384ff2dc18da4dbded0f01194d799e1cca1e9992bbfa27c522c977b803dd"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 39,
+      "display": false,
+      "label": null,
+      "source": "\\|W_0\\|_2\\|W_1\\|_2",
+      "svg": "docs/assets/math/inline-fe0b7108e507edc4.svg",
+      "sha256": "52ad68dd9a693aa78bcf54439f6440f0e90a2d9931fc78d71614d1721ba86332"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 40,
+      "display": true,
+      "label": null,
+      "source": "\\|p_T-p'_T\\|_2\\le\\frac{1}{2T}\\|\\ell-\\ell'\\|_2",
+      "svg": "docs/assets/math/display-c03855d5fee8e109.svg",
+      "sha256": "6559c920033afb560d64ea72ca73e12699149029a83b2cf5823d9a4ea24c8518"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 41,
+      "display": false,
+      "label": null,
+      "source": "B_r",
+      "svg": "docs/assets/math/inline-bf787e25d6f0fee0.svg",
+      "sha256": "623efce1a760520d69ebda258906e7543177bb80f809c382b3cad15c8e11cd6e"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 42,
+      "display": false,
+      "label": null,
+      "source": "\\|\\bar p(I)-\\bar p(I')\\|_2\\le\\frac{1}{10}\\sum_{r=1}^{10}\\frac{B_r}{2T_r}",
+      "svg": "docs/assets/math/inline-1a5d7352cec5ff8c.svg",
+      "sha256": "b4121258e2ec6a61f1e039e7b3e69dd1355434365c83832022bc5fc2498585ae"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 43,
+      "display": true,
+      "label": null,
+      "source": "d_{i,(k+1)}-d_{i,(k)}>4\\epsilon\\quad\\Longrightarrow\\quad\\mathcal{N}_{kNN}'(i)=\\mathcal{N}_{kNN}(i)",
+      "svg": "docs/assets/math/display-1178c2f1ffd0c1f9.svg",
+      "sha256": "d67c2709971f9548098e572116c98f019ee4987c1a67375f89241464346e59bf"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 44,
+      "display": false,
+      "label": null,
+      "source": "X'=PX",
+      "svg": "docs/assets/math/inline-4d6a3ecd334b2f67.svg",
+      "sha256": "bd8fa56841527bef320ec1a36fe8e1be735e388fa05d19c7b88cc142947cabf9"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 45,
+      "display": false,
+      "label": null,
+      "source": "S'=PSP^T",
+      "svg": "docs/assets/math/inline-8f73f229b8bc56cf.svg",
+      "sha256": "4a841d5e1b1b5f25d2e0692c0db1bff60249ac2001d23f04be7eaffce8fda1b7"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 46,
+      "display": false,
+      "label": null,
+      "source": "Z'=PZ",
+      "svg": "docs/assets/math/inline-d9b89c944f8d82d9.svg",
+      "sha256": "58a292e5edd247240eae2485a6e064e35f7cc2c71f21d3f277bf4e3b7f99948a"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 47,
+      "display": true,
+      "label": null,
+      "source": "Q_K(PSP^T)PZ=PQ_K(S)Z",
+      "svg": "docs/assets/math/display-0d74ec3a9d2e0d0d.svg",
+      "sha256": "cc3ef10f255e92a0c79949983b1838c564e02594f32732ff20f667bb07c97281"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 48,
+      "display": false,
+      "label": null,
+      "source": "(PSP^T)^t=PS^tP^T",
+      "svg": "docs/assets/math/inline-832b2fe9fddb83bb.svg",
+      "sha256": "890ca35051b07df0559a96b14f9adc763a9862c9adc7d4a2638cd8b3007a02f4"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 49,
+      "display": true,
+      "label": null,
+      "source": "F1_{macro}=\\frac{1}{C}\\sum_c\\frac{2TP_c}{2TP_c+FP_c+FN_c},\\qquad BA=\\frac{1}{C}\\sum_c\\frac{TP_c}{TP_c+FN_c}",
+      "svg": "docs/assets/math/display-7edd5b1cb9a5614b.svg",
+      "sha256": "b49d1d4d38ae0831de8b15596f67d3fe5a9c481f61e6ce65712a6428d947977a"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 50,
+      "display": true,
+      "label": null,
+      "source": "\\operatorname{Brier}=n^{-1}\\sum_i\\sum_c(p_{ic}-\\mathbf{1}\\{y_i=c\\})^2",
+      "svg": "docs/assets/math/display-5c09a529945aee26.svg",
+      "sha256": "5ea4dd9c5730eef093963b7c21c6c21a98fc36fea725c071542b1286d3e0e68d"
+    },
+    {
+      "document": "research_output/revision/manuscript_template.md",
+      "occurrence": 51,
+      "display": true,
+      "label": null,
+      "source": "\\operatorname{ECE}=\\sum_{b=1}^{10}\\frac{|B_b|}{n}|\\operatorname{acc}(B_b)-\\operatorname{conf}(B_b)|",
+      "svg": "docs/assets/math/display-4fad83cfa85cdbc6.svg",
+      "sha256": "dabe45987b51768edb5f9ba29e198c35b01dec701da204c8ed87bb90cf7ccc35"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 1,
+      "display": true,
+      "label": null,
+      "source": "x_i=[\\mu_i^{RGB};\\sigma_i^{RGB};g_i^{x,RGB};g_i^{y,RGB};u_i;v_i;r_i]\\in\\mathbb{R}^{15}",
+      "svg": "docs/assets/math/display-12e7342ee8b45c73.svg",
+      "sha256": "df14048eb00f08808d1cbe087647d629a19dfeebeef2ae0ba248f1faf334df2c"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 2,
+      "display": true,
+      "label": null,
+      "source": "r_i=\\sqrt{(u_i-1/2)^2+(v_i-1/2)^2}",
+      "svg": "docs/assets/math/display-d640e3e40bf87aea.svg",
+      "sha256": "ce4f90a00b345552fdef8d0cfe2cc99344cbcb81f19a62457c76435948ffe375"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 3,
+      "display": true,
+      "label": null,
+      "source": "b_i=\\min\\left(1,\\frac{\\frac{1}{3}\\sum_{c=1}^{3}(g_{ic}^{x}+g_{ic}^{y})}{0.15}\\right)",
+      "svg": "docs/assets/math/display-1eba44e48025276c.svg",
+      "sha256": "ade86d8280df57a4e4ada21ee5f3862b00297bcc02bda479d36525d7ac228f64"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 4,
+      "display": true,
+      "label": null,
+      "source": "m_{ij}=\\mathbf{1}\\{j\\in\\mathcal{N}_{grid}(i)\\ \\mathrm{or}\\ j\\in\\mathcal{N}_{kNN}(i)\\ \\mathrm{or}\\ i\\in\\mathcal{N}_{kNN}(j)\\}",
+      "svg": "docs/assets/math/display-a10d58104d2836f3.svg",
+      "sha256": "10cd21e9770e426e12c1063381e615f0860fc2aef96738902bd3428bc99f2346"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 5,
+      "display": true,
+      "label": null,
+      "source": "a_{ij}=m_{ij}\\exp\\left(-\\frac{\\|\\mu_i-\\mu_j\\|_2^2}{2\\sigma_c^2}-\\frac{\\|p_i-p_j\\|_2^2}{2\\sigma_s^2}-\\frac{\\beta}{2}(b_i+b_j)\\right),\\quad i\\ne j",
+      "svg": "docs/assets/math/display-e0409119929b4644.svg",
+      "sha256": "41303097673fc12c69ec4c483d91d49f22869da23c7b30c033e0a4c00e9b0166"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 6,
+      "display": true,
+      "label": null,
+      "source": "\\widetilde{A}=A+I_N,\\quad\\widetilde{D}_{ii}=\\sum_j\\widetilde{A}_{ij},\\quad S=\\widetilde{D}^{-1/2}\\widetilde{A}\\widetilde{D}^{-1/2},\\quad L=I_N-S",
+      "svg": "docs/assets/math/display-6d1f092d1b519e3a.svg",
+      "sha256": "402e81cfbd16896403bf023c4a74c0595d724d3f01882b5f80411704726acd53"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 7,
+      "display": true,
+      "label": null,
+      "source": "Z=\\operatorname{ReLU}\\left(\\operatorname{ReLU}(XW_0+b_0)W_1+b_1\\right)",
+      "svg": "docs/assets/math/display-fb0fad678bc5cbbb.svg",
+      "sha256": "a8d5da3e88aab53a701f412c3ca93edde1815394f673b3ec36a791c200256783"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 8,
+      "display": true,
+      "label": null,
+      "source": "H^{(0)}=Z,\\qquad H^{(t+1)}=(1-\\alpha)SH^{(t)}+\\alpha Z",
+      "svg": "docs/assets/math/display-424daf9922dbb733.svg",
+      "sha256": "f9eae97bd36b372e46ab3399a7d8268ab83cedbefca9c0238b0790d378a1bfd2"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 9,
+      "display": true,
+      "label": null,
+      "source": "Q_K=(1-\\alpha)^K S^K+\\alpha\\sum_{t=0}^{K-1}(1-\\alpha)^t S^t,\\qquad H^{(K)}=Q_KZ",
+      "svg": "docs/assets/math/display-3085d54d77effd84.svg",
+      "sha256": "764bf666bcb5c456ec9a2f66713b6557fad730b61d8edcbafb9c773199e68e33"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 10,
+      "display": true,
+      "label": null,
+      "source": "z_G=[N^{-1}\\sum_{i=1}^{N}H_i^{(K)};\\ \\max_i H_i^{(K)}],\\qquad p=\\operatorname{softmax}(f_\\theta(z_G))",
+      "svg": "docs/assets/math/display-a325dcdeaa0d34bf.svg",
+      "sha256": "ef29dcef4cac4ddd772c2023041a41ec58114afc634b11d243c7bd2b86a7ccb7"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 11,
+      "display": true,
+      "label": null,
+      "source": "w_c=\\sqrt{\\frac{n_{train}}{C n_c}},\\qquad\\mathcal{L}=-\\frac{\\sum_{i=1}^{B}w_{y_i}\\log p_{i,y_i}}{\\sum_{i=1}^{B}w_{y_i}}",
+      "svg": "docs/assets/math/display-931dfda05ced6834.svg",
+      "sha256": "1e743151733b27449406cb14d656a746950f911c11aacb298bf507c858db2281"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 12,
+      "display": true,
+      "label": null,
+      "source": "p_T(c\\mid I)=\\frac{\\exp(\\ell_c/T)}{\\sum_{j=1}^{C}\\exp(\\ell_j/T)},\\qquad T>0",
+      "svg": "docs/assets/math/display-411b656f4a78f3a1.svg",
+      "sha256": "fe288956f3aac2029e9af691a586805e768819f819fcaa4d4c094cec6c9ab876"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 13,
+      "display": true,
+      "label": null,
+      "source": "H^*=\\alpha[I_N-(1-\\alpha)S]^{-1}Z=(I_N+\\tau L)^{-1}Z,\\qquad\\tau=\\frac{1-\\alpha}{\\alpha}",
+      "svg": "docs/assets/math/display-fec61f3d7d998e12.svg",
+      "sha256": "0e2a41f768fbfedcd8d67e22a0b222eaf5538f889f42b6056b85d4b53f3b9e08"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 14,
+      "display": true,
+      "label": null,
+      "source": "\\|H^{(K)}-H^*\\|_F\\le(1-\\alpha)^K\\|Z-H^*\\|_F",
+      "svg": "docs/assets/math/display-c11777465855066b.svg",
+      "sha256": "d0ec5591385849b16e75a45ef6b8df6b2b7c76b1d92a08aab7974fe198543a50"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 15,
+      "display": true,
+      "label": null,
+      "source": "H^*=\\underset{H}{\\operatorname{argmin}}\\{\\|H-Z\\|_F^2+\\tau\\operatorname{tr}(H^TLH)\\}",
+      "svg": "docs/assets/math/display-594edb52968908f9.svg",
+      "sha256": "28e91c213a1b41e9a7bfa982456d9e020f6ab06825b5c016dabc68c2c77f6721"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 16,
+      "display": false,
+      "label": null,
+      "source": "(1-\\alpha)S",
+      "svg": "docs/assets/math/inline-8e5a7954eeccab04.svg",
+      "sha256": "7a2ecbbd2b50cd6b40717e1bbbe0cc63059e8280bdef9a574f117c090e48f8ef"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 17,
+      "display": false,
+      "label": null,
+      "source": "I_N-(1-\\alpha)S",
+      "svg": "docs/assets/math/inline-5982b43f0b549cbd.svg",
+      "sha256": "a0b3c58b384e271e2c8c9a060d8eab3eb62dc6a2054a1db16a82cbb1a0109af2"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 18,
+      "display": false,
+      "label": null,
+      "source": "\\alpha",
+      "svg": "docs/assets/math/inline-ba58a7097c8fb88e.svg",
+      "sha256": "abedf5a56512e709328b79761ab4c4edb64ab5acbdea2c5da835730b703acdd7"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 19,
+      "display": false,
+      "label": null,
+      "source": "(I_N+\\tau L)H=Z",
+      "svg": "docs/assets/math/inline-0e87cd727664d58c.svg",
+      "sha256": "20053d9b1b5edf5338b2d9a168aa3560958d6563a96cce2ab372e457c869c5c5"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 20,
+      "display": true,
+      "label": null,
+      "source": "g_\\alpha(\\lambda)=\\frac{\\alpha}{\\alpha+(1-\\alpha)\\lambda}",
+      "svg": "docs/assets/math/display-49593d8aa06ad5c3.svg",
+      "sha256": "65d27d105e844dc616f632ac5278b4f5825ad176b17f377bb6e7d79dded79016"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 21,
+      "display": true,
+      "label": null,
+      "source": "g_{\\alpha,K}(\\lambda)=q^K+\\alpha\\frac{1-q^K}{1-q},\\qquad q=(1-\\alpha)(1-\\lambda)",
+      "svg": "docs/assets/math/display-e7f28ba91b4901b7.svg",
+      "sha256": "c47023b83cf641f6d1b62891796344ad98930c08ed10a896d0812d799f8b9267"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 22,
+      "display": false,
+      "label": null,
+      "source": "\\mathcal{E}(H)=\\operatorname{tr}(H^TLH)",
+      "svg": "docs/assets/math/inline-c7ace63321efb1c8.svg",
+      "sha256": "6e561f6bebefec5712d20e2ba169e423014fb3d3c6adb34ee343b0c16473aa8e"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 23,
+      "display": true,
+      "label": null,
+      "source": "\\mathcal{E}(H^*)=\\sum_j\\lambda_jg_\\alpha(\\lambda_j)^2\\|(U^TZ)_j\\|_2^2\\le\\mathcal{E}(Z)",
+      "svg": "docs/assets/math/display-cc9663cfe0de628c.svg",
+      "sha256": "eaa021725cd07647f1ac9a28ad40d57410b2afff8296ad2076e1e20d1d169ce8"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 24,
+      "display": false,
+      "label": null,
+      "source": "a=1-\\alpha",
+      "svg": "docs/assets/math/inline-aba27199a4260f15.svg",
+      "sha256": "c67020259450398455eddb8443473081f9b43ce42e1c6f143fae3a099fd01051"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 25,
+      "display": true,
+      "label": null,
+      "source": "\\|Q_K(S)Z-Q_K(S')Z\\|_F\\le c_K\\|S-S'\\|_2\\|Z\\|_F,\\qquad c_K=\\frac{a}{\\alpha}(1-a^K)",
+      "svg": "docs/assets/math/display-0c5f2dd11e6dbaba.svg",
+      "sha256": "b2916a09d9772e5592b839bd9915e29f1dc9930353282b2507f5a0fe41f3c5a4"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 26,
+      "display": false,
+      "label": null,
+      "source": "e_t",
+      "svg": "docs/assets/math/inline-581ffead640b628a.svg",
+      "sha256": "f04610c46d217d8dd1c2ea45aafccafe6025b468d864c661362a85a9c2c0afb8"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 27,
+      "display": false,
+      "label": null,
+      "source": "e_0=0",
+      "svg": "docs/assets/math/inline-349ecd0f86dacb84.svg",
+      "sha256": "1528c577981a6ca1ffdc23b01f1c6793e53dd79af4445c166b4a5f99181288bb"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 28,
+      "display": false,
+      "label": null,
+      "source": "e_{t+1}\\le a e_t+a\\|S-S'\\|_2\\|Z\\|_F",
+      "svg": "docs/assets/math/inline-89b6e03aa579ab30.svg",
+      "sha256": "97e9b0bb72c00a4edfc1218dbcadf893be0b0e0c7be9ece8308b272176172d4d"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 29,
+      "display": false,
+      "label": null,
+      "source": "c_K",
+      "svg": "docs/assets/math/inline-e68c20fb3c15f332.svg",
+      "sha256": "5e0b1e2fbf739dbb80884a74bb6636a5b995aa35869a67f83577a4bdd6cae86b"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 30,
+      "display": false,
+      "label": null,
+      "source": "c_K=2.3616",
+      "svg": "docs/assets/math/inline-ca3a8229b80cb729.svg",
+      "sha256": "f7bffd9e9f57e6393ab1d99be472a39013b2b72928a2e48545c8924235950659"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 31,
+      "display": false,
+      "label": null,
+      "source": "Q_K",
+      "svg": "docs/assets/math/inline-3c648998ea7949f1.svg",
+      "sha256": "217b8ff6b202b270b14cb280660184870ffba1c4903e0be3f1a59bc6ca0c11a3"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 32,
+      "display": true,
+      "label": null,
+      "source": "\\|Q_K(S)Z-Q_K(S')Z'\\|_F\\le\\|Z-Z'\\|_F+c_K\\|S-S'\\|_2\\|Z'\\|_F",
+      "svg": "docs/assets/math/display-ae43520aa4eb67e1.svg",
+      "sha256": "cc59e9ee07d242e134dfed3db231e62dd565b00eebeb7e874098780ff1e225d8"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 33,
+      "display": false,
+      "label": null,
+      "source": "Q_K(S)Z'",
+      "svg": "docs/assets/math/inline-e0267ade21a9213f.svg",
+      "sha256": "511c444836df56f696e1351a164a53ff0a3637c2cd872b6a9104301c7161e8fe"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 34,
+      "display": false,
+      "label": null,
+      "source": "\\rho",
+      "svg": "docs/assets/math/inline-540f7abd58827d93.svg",
+      "sha256": "2989345ef541903e86d8b247a2913235489e1d1f39e5610ebd0ea591cf2d32a8"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 35,
+      "display": false,
+      "label": null,
+      "source": "\\sqrt{1+1/N}",
+      "svg": "docs/assets/math/inline-7f68cbd5dc665c5d.svg",
+      "sha256": "053aa81ed850ae21333fc4e2ad08348687323af87d6f0a943863c780761013fa"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 36,
+      "display": false,
+      "label": null,
+      "source": "1/\\sqrt{N}",
+      "svg": "docs/assets/math/inline-596606f3b025feb5.svg",
+      "sha256": "99880d6ccf2617f01518892866fe3c13ebba326c72f5ec0dc5f0f1c382de0b5b"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 37,
+      "display": false,
+      "label": null,
+      "source": "L_f=\\|W_2\\|_2\\|W_3\\|_2",
+      "svg": "docs/assets/math/inline-197326e756a735f4.svg",
+      "sha256": "92f77aa5fa9c911e14a22becb07e123f46a0fe17d7dfcbb536802569c9b4b298"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 38,
+      "display": true,
+      "label": null,
+      "source": "\\|\\ell-\\ell'\\|_2\\le L_f\\sqrt{1+1/N}\\left[\\|Z-Z'\\|_F+c_K\\|S-S'\\|_2\\|Z'\\|_F\\right]",
+      "svg": "docs/assets/math/display-e40fc2b6a4e1d790.svg",
+      "sha256": "5a45384ff2dc18da4dbded0f01194d799e1cca1e9992bbfa27c522c977b803dd"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 39,
+      "display": false,
+      "label": null,
+      "source": "\\|W_0\\|_2\\|W_1\\|_2",
+      "svg": "docs/assets/math/inline-fe0b7108e507edc4.svg",
+      "sha256": "52ad68dd9a693aa78bcf54439f6440f0e90a2d9931fc78d71614d1721ba86332"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 40,
+      "display": true,
+      "label": null,
+      "source": "\\|p_T-p'_T\\|_2\\le\\frac{1}{2T}\\|\\ell-\\ell'\\|_2",
+      "svg": "docs/assets/math/display-c03855d5fee8e109.svg",
+      "sha256": "6559c920033afb560d64ea72ca73e12699149029a83b2cf5823d9a4ea24c8518"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 41,
+      "display": false,
+      "label": null,
+      "source": "B_r",
+      "svg": "docs/assets/math/inline-bf787e25d6f0fee0.svg",
+      "sha256": "623efce1a760520d69ebda258906e7543177bb80f809c382b3cad15c8e11cd6e"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 42,
+      "display": false,
+      "label": null,
+      "source": "\\|\\bar p(I)-\\bar p(I')\\|_2\\le\\frac{1}{10}\\sum_{r=1}^{10}\\frac{B_r}{2T_r}",
+      "svg": "docs/assets/math/inline-1a5d7352cec5ff8c.svg",
+      "sha256": "b4121258e2ec6a61f1e039e7b3e69dd1355434365c83832022bc5fc2498585ae"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 43,
+      "display": true,
+      "label": null,
+      "source": "d_{i,(k+1)}-d_{i,(k)}>4\\epsilon\\quad\\Longrightarrow\\quad\\mathcal{N}_{kNN}'(i)=\\mathcal{N}_{kNN}(i)",
+      "svg": "docs/assets/math/display-1178c2f1ffd0c1f9.svg",
+      "sha256": "d67c2709971f9548098e572116c98f019ee4987c1a67375f89241464346e59bf"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 44,
+      "display": false,
+      "label": null,
+      "source": "X'=PX",
+      "svg": "docs/assets/math/inline-4d6a3ecd334b2f67.svg",
+      "sha256": "bd8fa56841527bef320ec1a36fe8e1be735e388fa05d19c7b88cc142947cabf9"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 45,
+      "display": false,
+      "label": null,
+      "source": "S'=PSP^T",
+      "svg": "docs/assets/math/inline-8f73f229b8bc56cf.svg",
+      "sha256": "4a841d5e1b1b5f25d2e0692c0db1bff60249ac2001d23f04be7eaffce8fda1b7"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 46,
+      "display": false,
+      "label": null,
+      "source": "Z'=PZ",
+      "svg": "docs/assets/math/inline-d9b89c944f8d82d9.svg",
+      "sha256": "58a292e5edd247240eae2485a6e064e35f7cc2c71f21d3f277bf4e3b7f99948a"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 47,
+      "display": true,
+      "label": null,
+      "source": "Q_K(PSP^T)PZ=PQ_K(S)Z",
+      "svg": "docs/assets/math/display-0d74ec3a9d2e0d0d.svg",
+      "sha256": "cc3ef10f255e92a0c79949983b1838c564e02594f32732ff20f667bb07c97281"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 48,
+      "display": false,
+      "label": null,
+      "source": "(PSP^T)^t=PS^tP^T",
+      "svg": "docs/assets/math/inline-832b2fe9fddb83bb.svg",
+      "sha256": "890ca35051b07df0559a96b14f9adc763a9862c9adc7d4a2638cd8b3007a02f4"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 49,
+      "display": true,
+      "label": null,
+      "source": "F1_{macro}=\\frac{1}{C}\\sum_c\\frac{2TP_c}{2TP_c+FP_c+FN_c},\\qquad BA=\\frac{1}{C}\\sum_c\\frac{TP_c}{TP_c+FN_c}",
+      "svg": "docs/assets/math/display-7edd5b1cb9a5614b.svg",
+      "sha256": "b49d1d4d38ae0831de8b15596f67d3fe5a9c481f61e6ce65712a6428d947977a"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 50,
+      "display": true,
+      "label": null,
+      "source": "\\operatorname{Brier}=n^{-1}\\sum_i\\sum_c(p_{ic}-\\mathbf{1}\\{y_i=c\\})^2",
+      "svg": "docs/assets/math/display-5c09a529945aee26.svg",
+      "sha256": "5ea4dd9c5730eef093963b7c21c6c21a98fc36fea725c071542b1286d3e0e68d"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 51,
+      "display": true,
+      "label": null,
+      "source": "\\operatorname{ECE}=\\sum_{b=1}^{10}\\frac{|B_b|}{n}|\\operatorname{acc}(B_b)-\\operatorname{conf}(B_b)|",
+      "svg": "docs/assets/math/display-4fad83cfa85cdbc6.svg",
+      "sha256": "dabe45987b51768edb5f9ba29e198c35b01dec701da204c8ed87bb90cf7ccc35"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 52,
+      "display": true,
+      "label": null,
+      "source": "\\eta_a,\\eta_b\\sim\\mathcal{N}(0,\\sigma^2)\\ \\mathrm{independently},\\qquad\\mathbb{E}|\\eta_a-\\eta_b|=\\frac{2\\sigma}{\\sqrt{\\pi}}",
+      "svg": "docs/assets/math/display-7ba26bdc3eb59abb.svg",
+      "sha256": "ceba4b39e04d29082ac4bc37002d20817059f44a3cee4f79b1e8c577a413ded6"
+    },
+    {
+      "document": "research_output/revision/sci_revision/manuscript_template.md",
+      "occurrence": 53,
+      "display": true,
+      "label": null,
+      "source": "\\Delta\\widehat{x}_{Iij}=\\frac{x'_{Iij}-x_{Iij}}{s_j},\\qquad R_g=\\frac{\\sum_{I,i}\\sum_{j\\in g}(\\Delta\\widehat{x}_{Iij})^2}{\\sum_{I,i,j}(\\Delta\\widehat{x}_{Iij})^2}",
+      "svg": "docs/assets/math/display-5d3ba29e9dd7fcb0.svg",
+      "sha256": "5c5c2af731cf3551a93be90dad69946325e09ce1dcb93c2bb29f5bb84f8fc680"
+    }
+  ]
+}
